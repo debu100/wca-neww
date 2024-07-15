@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.reg-con {
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  height: 100vh;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Exo 2", sans-serif;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+.title {
+  font-size: 1.35rem;
+  color: darkblue;
+  font-weight: 700;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin: 1rem 0;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: darkblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: darkblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+  /* margin-left: 1rem; */
+}
+
+.form label .input {
+  width: 100%;
+  padding: 1rem 0;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 40px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input1:focus + span,
+.form label .input1:valid + span {
+  top: 58px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(220.55deg, #ff0000 0%, #470000 100%);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.submit:hover {
+  background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

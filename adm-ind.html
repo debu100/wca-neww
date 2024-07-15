@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission - Join Our Institute for your better future</title>
+    <!-- aos css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="./css/adm.css" /> -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body class="admission-body">
+    <my-header></my-header>
+
+    <section class="admission-container">
+      <h1>Admission Form</h1>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter Email Address" required />
+        </div>
+
+        <div class="input-box">
+          <label> Phone Number</label>
+          <input type="number" placeholder="Enter Phone Number" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Alternate Phone Number</label>
+            <input
+              type="number"
+              placeholder="Alternate phone number"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>        
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Third Gender</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-groups">
+          <p>Which option best describes your current role?</p>         
+          <select id="select1" name="role" class="form-controls" required>
+            <option disabled selected value>Select your Course</option>
+            <option value="25000">Frontend Development</option>
+            <option value="14000">Web Design</option>
+            <option value="15000">JavaScript and Jquery</option>
+            <option value="15000">Backend Development</option>
+            <option value="35000">Fullstack Development</option>
+            <option value="10000">Graphics Design</option>
+            <option value="15000">WordPress Development</option>
+            <option value="25000">Digital Marketing</option>
+            <option value="25000">Laravel Framework</option>
+            <option value="50000">Machine Learning</option>
+            <option value="30000">Angular JS</option>
+            <option value="25000">React JS</option>
+            <option value="65000">Blockchain</option>
+            <option value="60000">Mobile App Development</option>
+            <option value="50000">Python & Django</option>
+            <option value="24000">Python</option>
+            <option value="22000">Django</option>
+            <option value="20000">Node JS</option>
+            <option value="20000">MongoDB</option>
+            <option value="35000">Node JS + Express JS + MongoDB</option>
+            <option value="12000">Spoken English</option>
+          </select>
+        </div>
+        <!-- <div class="form-groups">
+          <select id="select2" name="role" class="form-controls" required>
+            <option disabled selected value>Select Currency</option>
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+          </select>
+        </div> -->
+        <!-- <p class="check-price-txt">
+          Price of the Selected Course :
+          <input class="output" placeholder="INR" />
+          <input class="output1" placeholder="USD" />
+        </p>
+        <div class="check-price-btn-box">
+          <button class="check-price-btn" onclick="getOption(); return false">
+            Check Price
+          </button>
+        </div> -->
+        <div class="input-box address">
+          <label>Present Address</label>
+          <input
+            style="margin-bottom: 1rem"
+            type="text"
+            placeholder="Enter Present address"
+            required
+          />
+
+          <label>Permanent Address</label>
+          <input type="text" placeholder="Enter Permanent address" required />
+
+          <!-- <div class="form-groups">
+            <p>Which option best describes your current role?</p>
+            <select id="select1">
+              <option value="0">Free</option>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div> -->
+          <!-- <p>
+            The value of the option selected is:
+            <span class="output"></span>
+          </p>
+
+          <button onclick="getOption()">Check option</button> -->
+
+          <!-- <div class="cur-box">
+            <select class="cur-item-1">
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB" selected>RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="USD">INR</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+
+            <input type="number" placeholder="1" class="cur-input-1" />
+          </div>
+
+          <div class="change-box">
+            <span class="change-btn"><i class="fas fa-retweet"></i></span>
+            <p class="rate-box">0.00</p>
+          </div>
+
+          <div class="cur-box">
+            <select class="cur-item-2">
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR" selected>EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="INR">USD</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+
+            <input type="number" placeholder="0" class="cur-input-2" />
+          </div> -->
+
+          <!-- <p>
+            The value of the option selected is:
+            <span class="output"></span>
+          </p>
+
+          <button class="checkprice">Check option</button> -->
+
+          <div class="column">
+            <div class="country-box" style="width: 100%">
+              <label style="margin-bottom: 1.5rem" class="form-label"
+                >Select Country</label
+              >
+
+              <select
+                id="country"
+                name="country"
+                class="form-controls"
+              ></select>
+            </div>
+            <div class="country-box" style="width: 100%">
+              <label class="form-label">State</label>
+
+              <select name="state" id="state" class="form-controls"></select>
+            </div>
+          </div>
+
+          <div class="column">
+            <input type="text" placeholder="Enter your City" required />
+            <input type="number" placeholder="Enter Pin Code" required />
+          </div>
+        </div>
+        <!-- <div class="ad-pay-box">
+          <div class="ad-pay-box-info">
+            <p>Foreign Students Only</p>
+            <a href="#">
+              <img
+                style="margin-top: 2.3rem"
+                class="pay-img pay-img2"
+                src="./images/paypal-new-img.jpeg"
+              />
+            </a>
+          </div>
+          <div class="ad-pay-box-info">
+            <p>Indian Students Only</p>
+            <button class="upi-net-btn">UPI / NET BANKING</button>
+          </div>
+        </div> -->
+
+        <button
+          style="
+            border-radius: 0.5rem 0 0.5rem 0;
+            font-family: Poppins, sans-serif;
+            letter-spacing: 2px;
+            display: block;
+          "
+        >
+          <a
+            style="
+              display: block;
+              width: 100%;
+              color: #fff;
+              font-family: Poppins, sans-serif;
+            "
+            href="./payment-ind.html"
+          >
+            Submit</a
+          >
+        </button>
+      </form>
+    </section>
+    <my-footer></my-footer>
+    <a class="scrll-btn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/country.js"></script>
+    <!-- <script src="./js/price.js"></script> -->
+    <script src="./js/headerfooter.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/adm.js"></script>
+    <!-- <script src="./js/disablerightclick.js"></script> -->
+    <script>
+      document.onkeydown = function (e) {
+        if (
+          e.ctrlKey &&
+          (e.keyCode === 67 ||
+            e.keyCode === 86 ||
+            e.keyCode === 85 ||
+            e.keyCode === 73 ||
+            e.keyCode === 74 || // J key
+            e.keyCode === 83 || // S key
+            e.keyCode === 123 || // F12 key
+            e.keyCode === 117)
+        ) {
+          return false;
+        } else {
+          return true;
+        }
+      };
+      $(document).keypress("u", function (e) {
+        if (e.ctrlKey) {
+          return false;
+        } else {
+          return true;
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      function getOption() {
+        const selectElement = document.querySelector("#select1");
+        const output = `Rs/- ${selectElement.value}`;
+        document.querySelector(".output").value = output;
+        document.querySelector(".output1").value = "";
+
+        const selectElement1 = document.querySelector("#select2");
+
+        const textCourse =
+          selectElement.options[selectElement.selectedIndex].text;
+
+        const res = selectElement.value * 0.012;
+
+        const res1 = selectElement.value * 0.012 + 100;
+
+        const output1 = `${res1}`;
+
+        if (
+          selectElement1.value === "USD" &&
+          textCourse === "JavaScript and Jquery"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 20
+          } USD`;
+          //   output.classList.add("removeOp");
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Frontend Development"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${output1} USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Web Design"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 32
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Backend Development"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 20
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Fullstack Development"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 30
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Graphics Design"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 130
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "WordPress Development"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 20
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Digital Marketing"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${output1} USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Laravel Framework"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${output1} USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Machine Learning"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${output1} USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Angular JS"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 40
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "React JS"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${output1} USD`;
+        } else if (selectElement1.value === "USD" && textCourse === "Node JS") {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 10
+          } USD`;
+        } else if (selectElement1.value === "USD" && textCourse === "MongoDB") {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 10
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Blockchain"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 20
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Blockchain"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 20
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Mobile App Development"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 30
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Python & Django"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 50
+          } USD`;
+        } else if (selectElement1.value === "USD" && textCourse === "Python") {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 62
+          } USD`;
+        } else if (selectElement1.value === "USD" && textCourse === "Django") {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 86
+          } USD`;
+        } else if (selectElement1.value === "USD" && textCourse === "Django") {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 86
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Node JS + Express JS + MongoDB"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 130
+          } USD`;
+        } else if (
+          selectElement1.value === "USD" &&
+          textCourse === "Spoken English"
+        ) {
+          document.querySelector(".output").value = "";
+          document.querySelector(".output1").value = `${
+            Number(output1) + 156
+          } USD`;
+        }
+      }
+    </script>
+  </body>
+</html>

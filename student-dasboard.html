@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/student-dashboard.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" /> -->
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <span class="lab la-accusoft"></span><span id="kleenpulse">ACA</span>
+        </h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="./index.html" class="active"
+              ><span class="las la-igloo"></span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html"
+              ><span><i class="fas fa-users"></i></span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="las la-clipboard-list"></span>
+              <span>Classes</span>
+            </a>
+          </li>
+          <li>
+            <a href="./courses.html"
+              ><span class="las la-shopping-bag"></span>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="./team.html"
+              ><span class="las la-receipt"></span>
+              <span>Trainers</span>
+            </a>
+          </li>
+          <li>
+            <a href="./faq.html"
+              ><span class="las la-receipt"></span>
+              <span>FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./contact.html"
+              ><span class="la la-user-circle"></span>
+              <span>Contact</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#"
+              ><span class="las la-clipboard"></span>
+              <span>Task</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h2 class="heading" id="dashboard">
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+          Dashboard
+        </h2>
+        <div class="search">
+          <div class="icon"></div>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="search"
+              id="mysearch"
+              autocomplete="off"
+            />
+          </div>
+          <span class="clear" onclick="reset()"></span>
+        </div>
+        <div class="user-wrapper">
+          <!-- <img
+            src="https://assets.codepen.io/3853433/internal/avatars/users/default.png?format=auto&version=1617122449&width=40&height=40"
+            alt=""
+          /> -->
+          <div>
+            <h4>Welcome KLEEN PULSE</h4>
+            <small>Aspiring Wordpress Developer</small>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="pop-wrap">
+          <h1 class="pop-up">Light Mode Activated</h1>
+        </div>
+        <div class="switch" id="switch">
+          <div id="toggle">
+            <i class="indicator"></i>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-single">
+            <div>
+              <h1 id="customer"></h1>
+              <span>Courses Enrolled</span>
+            </div>
+            <div>
+              <span class="las la-users"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1 id="project"></h1>
+              <span class="c-info">Projects Done</span>
+            </div>
+            <div>
+              <span class="las la-clipboard"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1 id="order"></h1>
+              <span class="c-info">Confirmed Orders</span>
+            </div>
+            <div>
+              <span class="las la-shopping-bag"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>
+                <sup>$</sup>
+                <p id="income"><b>k</b></p>
+              </h1>
+              <span class="c-info">weekly Income</span>
+            </div>
+            <div>
+              <span class="lab la-google-wallet"></span>
+            </div>
+          </div>
+        </div>
+        <div class="recent-grid">
+          <div class="projects">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="heading">Recent Projects</h3>
+                <button>
+                  See all <span class="las la-arrow-right"></span>
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table width="100%" style="height: 100%">
+                    <thead>
+                      <tr>
+                        <td>Projects</td>
+                        <td>Department</td>
+                        <td>Status</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Dev</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>pending</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>Mobile Team</td>
+                        <td><span class="status orange"></span>active</td>
+                      </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Dev</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>pending</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>Mobile Team</td>
+                        <td><span class="status orange"></span>active</td>
+                      </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Dev</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>pending</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>Mobile Team</td>
+                        <td><span class="status orange"></span>active</td>
+                      </tr>
+                      <tr>
+                        <td>UI/UX Design</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"></span>review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Dev</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"></span>pending</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>Mobile Team</td>
+                        <td><span class="status orange"></span>active</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customers">
+            <div class="card" style="height: 100%">
+              <div class="card-header">
+                <h3 class="heading">Course Information</h3>
+              </div>
+
+              <ul style="padding: 1rem">
+                <li>
+                  <h4 class="db">
+                    <em
+                      style="
+                        text-decoration: underline double;
+                        text-underline-offset: 2px;
+                      "
+                    >
+                      Courses Enrolled:
+                    </em>
+                  </h4>
+                  <p class="db" >
+                    List of courses the student is currently enrolled in.
+                  </p>
+                </li>
+                <li style="margin: 1rem 0">
+                  <h4 class="db">
+                    <em
+                      style="
+                        text-decoration: underline double;
+                        text-underline-offset: 2px;
+                      "
+                    >
+                      Course Materials:
+                    </em>
+                  </h4>
+                  <p class="db" >
+                    Links to access course materials, textbooks, or
+                    supplementary resources.
+                  </p>
+                </li>
+                <li style="margin: 1rem 0">
+                  <h4 class="db">
+                    <em
+                      style="
+                        text-decoration: underline double;
+                        text-underline-offset: 2px;
+                      "
+                    >
+                      Progress Tracking:</em
+                    >
+                  </h4>
+                  <p class="db" >
+                    Visual representation (charts, progress bars) of course
+                    progress.
+                  </p>
+                </li>
+                <li style="margin: 1rem 0">
+                  <h4 class="db">
+                    <em
+                      style="
+                        text-decoration: underline double;
+                        text-underline-offset: 2px;
+                      "
+                    >
+                      <p class="db">Assessment Assistance:</p></em
+                    >
+                  </h4>
+                  <p class="db" >
+                    Need help with assessments? Check your assessment schedule,
+                    submit assignments, and review grades in this section. For
+                    specific queries, contact your instructor directly.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="customers">
+            <div class="card" style="height: 100%">
+              <div class="card-header">
+                <h3 class="heading">Resolve your Queries</h3>
+              </div>
+              <h4
+                class="db"
+                style="
+                  padding: 0.75rem;
+                  text-decoration: underline double;
+                  text-underline-offset: 4px;
+                "
+              >
+                Technical Support Prompt:
+              </h4>
+              <p class="db" style="margin: 0.1rem">
+                Encountering technical issues? Our technical support team is
+                ready to assist you. Please provide details about the problem
+                you're experiencing, and we'll get back to you shortly.Click on
+                the button below for support!
+              </p>
+              <a href="#"
+                ><button
+                  style="
+                    background: linear-gradient(
+                      220.55deg,
+                      #ff0000 0%,
+                      #470000 100%
+                    );
+                    border: none;
+                    font-size: 1rem;
+                    padding: 0.5rem 1.5rem;
+                    margin: 0.5rem 1.75rem;
+                    color: #fff;
+                  "
+                >
+                  Need Assistance
+                </button></a
+              >
+
+              <h4
+                class="db"
+                style="
+                  padding: 0.75rem;
+                  text-decoration: underline double;
+                  text-underline-offset: 4px;
+                "
+              >
+                Feedback Form Invitation:
+              </h4>
+              <p class="db" style="padding: 0.75rem">
+                Your feedback matters! Share your thoughts on your learning
+                experience and how we can improve. Fill out our feedback form to
+                help us serve you better.Click on the button below and share
+                your feedback!
+              </p>
+              <a href="#"
+                ><button
+                  style="
+                    background: linear-gradient(
+                      220.55deg,
+                      #00b960 0%,
+                      #00552c 100%
+                    );
+                    border: none;
+                    font-size: 1rem;
+                    padding: 0.5rem 1.5rem;
+                    margin: 0.5rem 1.75rem;
+                    color: #fff;
+                  "
+                >
+                  Give Feedback
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem" class="projects">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="heading">Related Courses</h3>
+              <button>See all <span class="las la-arrow-right"></span></button>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <td>Course</td>
+                      <!-- <td>Department</td> -->
+                      <td>Action</td>
+                      <td>View Course</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Frontend Development</td>
+                      <!-- <td>UI Team</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./frontend-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Backend Development</td>
+                      <!-- <td>Frontend</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./backend-course.html"
+                          ><span class="status pink"></span>Course details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Full Stack Web Development</td>
+                      <!-- <td>Mobile Team</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./fullstack-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Digital Marketing</td>
+                      <!-- <td>UI Team</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          class="enrol-now"
+                          href="./digital-marketing-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>React JS</td>
+                      <!-- <td>Frontend</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./react-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Wordpress Development</td>
+                      <!-- <td>Mobile Team</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Machine Learning</td>
+                      <!-- <td>UI Team</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          class="enrol-now"
+                          href="./machine-learning-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Laravel Framework</td>
+                      <!-- <td>Frontend</td> -->
+                      <td>
+                        <a class="enrol-now" href="./admission.html"
+                          ><span class="status pink"></span>Enrol Now</a
+                        >
+                      </td>
+                      <td>
+                        <a class="enrol-now" href="./laravel-course.html"
+                          ><span class="status pink"></span>Course Details</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <p>
+          Made with
+          <span id="heart"
+            ><img
+              id="Layer_1"
+              src="https://pkms.co.uk/wp-content/uploads/2019/07/heart.png"
+            />
+          </span>
+          | Akincrest Career Academy ©2024
+        </p>
+      </footer>
+    </div>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/student-dashboard.js"></script>
+  </body>
+</html>

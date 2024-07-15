@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission - Join Our Institute for your better future</title>
+    <!-- aos css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body class="admission-body">
+    <my-header></my-header>
+
+    <section class="admission-container">
+      <h1>Admission Form</h1>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter Email Address" required />
+        </div>
+
+        <div class="input-box">
+          <label> Phone Number</label>
+          <input type="number" placeholder="Enter Phone Number" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Alternate Phone Number</label>
+            <input
+              type="number"
+              placeholder="Alternate phone number"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Third Gender</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-groups">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-controls" required>
+            <option disabled selected value>Select your Course</option>
+            <option value="Frontend Development">Frontend Development</option>
+            <option value="Backend Development">Backend Development</option>
+            <option value="Fullstack Development">Fullstack Development</option>
+            <option value="Graphics Design">Graphics Design</option>
+            <option value="WordPress Development">WordPress Development</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Laravel Framework">Laravel Framework</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Machine Learning">Angular JS</option>
+            <option value="Machine Learning">React JS</option>
+            <option value="Machine Learning">Blockchain</option>
+            <option value="Machine Learning">Mobile App Development</option>
+            <option value="Machine Learning">Python & Django</option>
+            <option value="Machine Learning">Node JS</option>
+            <option value="Machine Learning">MobgoDB</option>
+          </select>
+        </div>
+        <div class="input-box address">
+          <label>Present Address</label>
+          <input
+            style="margin-bottom: 1rem"
+            type="text"
+            placeholder="Enter Present address"
+            required
+          />
+
+          <label>Permanent Address</label>
+          <input type="text" placeholder="Enter Permanent address" required />
+
+          <div class="column">
+            <div class="country-box" style="width: 100%">
+              <label style="margin-bottom: 1.5rem" class="form-label"
+                >Select Course</label
+              >
+
+              <select id="course" name="course" class="form-controls"></select>
+            </div>
+            <div class="country-box" style="width: 100%">
+              <label class="form-label">State</label>
+
+              <select name="price" id="price" class="form-controls"></select>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="country-box" style="width: 100%">
+              <label style="margin-bottom: 1.5rem" class="form-label"
+                >Select Country</label
+              >
+
+              <select
+                id="country"
+                name="country"
+                class="form-controls"
+              ></select>
+            </div>
+            <div class="country-box" style="width: 100%">
+              <label class="form-label">State</label>
+
+              <select name="state" id="state" class="form-controls"></select>
+            </div>
+          </div>
+
+          <div class="column">
+            <input type="text" placeholder="Enter your City" required />
+            <input type="number" placeholder="Enter Pin Code" required />
+          </div>
+        </div>
+        <!-- <div class="ad-pay-box">
+          <div class="ad-pay-box-info">
+            <p>Foreign Students Only</p>
+            <a href="#">
+              <img
+                style="margin-top: 2.3rem"
+                class="pay-img pay-img2"
+                src="./images/paypal-new-img.jpeg"
+              />
+            </a>
+          </div>
+          <div class="ad-pay-box-info">
+            <p>Indian Students Only</p>
+            <button class="upi-net-btn">UPI / NET BANKING</button>
+          </div>
+        </div> -->
+        <button
+          style="
+            border-radius: 0.5rem 0 0.5rem 0;
+            font-family: Poppins, sans-serif;
+            letter-spacing: 2px;
+          "
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <my-footer></my-footer>
+    <a class="scrll-btn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/country.js"></script>
+    <script src="./js/price.js"></script>
+    <script src="./js/headerfooter.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/disablerightclick.js"></script> -->
+    <script>
+      document.onkeydown = function (e) {
+        if (
+          e.ctrlKey &&
+          (e.keyCode === 67 ||
+            e.keyCode === 86 ||
+            e.keyCode === 85 ||
+            e.keyCode === 73 ||
+            e.keyCode === 74 || // J key
+            e.keyCode === 83 || // S key
+            e.keyCode === 123 || // F12 key
+            e.keyCode === 117)
+        ) {
+          return false;
+        } else {
+          return true;
+        }
+      };
+      $(document).keypress("u", function (e) {
+        if (e.ctrlKey) {
+          return false;
+        } else {
+          return true;
+        }
+      });
+    </script>
+  </body>
+</html>

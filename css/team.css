@@ -1,0 +1,266 @@
+.stf {
+  width: 50%;
+  height: 620px;
+  /* height: auto !important; */
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(220.55deg, #ff896d 0%, #d02020 100%);
+  margin-bottom: 10rem !important;
+}
+.stf #sideb {
+  background: #fff;
+  border: 1px solid #666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 450px;
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  /* padding-bottom: 2rem; */
+}
+.stf #sideb img {
+  border-radius: 100%;
+}
+.stf #sideb .ch0 img {
+  background: #417fa0;
+  border: 5px solid #417fa0;
+}
+.stf #sideb .ch1 img,
+.stf #sideb .ch2 img,
+.stf #sideb .ch3 img,
+.stf #sideb .ch4 img,
+.stf #sideb .ch5 img {
+  background: #941010;
+  border: 5px solid #941010;
+}
+.stf #sideb .ch6 img {
+  background: #437d9b;
+  border: 5px solid #437d9b;
+}
+.stf #sideb .ch7 img,
+.stf #sideb .ch8 img,
+.stf #sideb .ch9 img {
+  background: #56893f;
+  border: 5px solid #56893f;
+}
+.stf #sideb .ch10 img,
+.stf #sideb .ch11 img {
+  background: #ad7b4b;
+  border: 5px solid #ad7b4b;
+}
+.stf #sideb .ch12 img {
+  background: #a1729f;
+  border: 5px solid #a1729f;
+}
+.stf #sideb .ch13 img {
+  background: #a03e63;
+  border: 5px solid #a03e63;
+}
+.stf #sideb .ch1,
+.stf #sideb .ch2,
+.stf #sideb .ch3,
+.stf #sideb .ch4,
+.stf #sideb .ch5 {
+  border-top: 20px solid #941010;
+}
+.stf #sideb .ch6 {
+  border-top: 20px solid #437d9b;
+}
+.stf #sideb .ch7,
+.stf #sideb .ch8,
+.stf #sideb .ch9 {
+  border-top: 20px solid #56893f;
+}
+.stf #sideb .ch10,
+.stf #sideb .ch11 {
+  border-top: 20px solid #ad7b4b;
+}
+.stf #sideb .ch12 {
+  border-top: 20px solid #a1729f;
+}
+.stf #sideb .ch13 {
+  border-top: 20px solid #a03e63;
+}
+.stf #sideb .ch {
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.stf #sideb .ch p {
+  margin-top: 0.5rem;
+}
+.stf .ch1,
+.stf .ch2,
+.stf .ch3,
+.stf .ch4,
+.stf .ch5,
+.stf .ch6,
+.stf .ch7,
+.stf .ch8,
+.stf .ch9,
+.stf .ch10,
+.stf .ch11,
+.stf .ch12,
+.stf .ch13 {
+  display: none;
+}
+.stf .a {
+  /* background-image: url(http://placehold.it/100); */
+  background-position: center;
+  background-size: 100%;
+  width: 100px;
+  background-color: #fff;
+  height: 100px;
+  outline: 1px solid #777;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 5px;
+  border: 3px solid #fff;
+  transform: scale(1) rotate(0deg);
+  position: relative;
+  transition: ease-in-out 0.2s;
+}
+.stf .a.acth {
+  transform: scale(1.3) rotate(-10deg);
+  z-index: 9;
+}
+.stf #botta {
+  width: 480px;
+  margin-left: 235px;
+  text-align: center;
+  position: relative;
+  top: 90px;
+}
+.stf h1 {
+  font: 30px raleway;
+  letter-spacing: -1px;
+  font-weight: 900;
+  margin: 20px auto 0;
+}
+.stf h2 {
+  font: 8px tahoma;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+.stf #clh,
+.stf p {
+  font: 11px sans-serif;
+  text-align: justify;
+  font-weight: bold;
+  display: block;
+}
+.stf #clh {
+  padding: 0 45px;
+  margin-top: 40px;
+  color: #777;
+}
+.stf p {
+  padding: 0 20px;
+  margin-top: 40px;
+  color: #999;
+}
+.ch #cth {
+  letter-spacing: 1px;
+  padding: 0 45px;
+  text-align: center;
+  color: #777;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.ch #cth b {
+  display: block;
+  letter-spacing: -1px;
+  font: 13px raleway;
+  font-weight: 800;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+.ch .cnt {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.ch .cnt a {
+  height: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: #333;
+  width: 100px;
+  padding-top: 14px;
+}
+.ch .cnt a:first-child {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+#sideb {
+  margin: 2rem auto;
+}
+
+.team-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (width<=990px) {
+  .stf {
+    width: 97%;
+    flex-direction: column;
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
+    /* justify-content: flex-start;
+    align-items: flex-end; */
+  }
+  .stf #botta {
+    width: 60%;
+    margin-left: 0;
+    top: 480px;
+  }
+  #copy {
+    margin-top: 0rem !important;
+  }
+
+  #copy1 {
+    margin-top: 35rem !important;
+  }
+
+  .stf .a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .team-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (width<=768px) {
+  .stf {
+    width: 97%;
+  }
+
+  .stf #botta {
+    width: 90%;
+    margin-left: 0;
+    top: 460px;
+  }
+}
