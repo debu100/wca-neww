@@ -3380,6 +3380,8 @@ form.sign-in-form {
   border-radius: 0 1rem 0 1rem;
   transition: 0.5s;
   overflow: hidden;
+  /* padding-bottom: 0; */
+  /* height: 50%; */
 }
 
 .courses-info-boxes-content:hover {
@@ -3403,7 +3405,7 @@ form.sign-in-form {
 .courses-info-boxes-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
   line-height: 1.6;
 }
 
