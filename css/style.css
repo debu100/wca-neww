@@ -349,9 +349,11 @@ header {
 
 .banner-btn {
   font-family: "Montserrat", sans-serif;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background: linear-gradient(220.55deg, #ff0000 0%, #470000 100%);
   padding: 0.75rem 2.25rem;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
+  /* border: none; */
   border-radius: 2rem;
   color: #fff;
   font-size: 1rem;
@@ -359,15 +361,19 @@ header {
   font-weight: 700;
   text-transform: capitalize;
   transition: all 0.5s;
+  /* display: flex;
+  justify-content: space-around;
+align-items: center; */
 }
 
 .banner-btn:hover {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+  /* border: none; */
   cursor: pointer;
 }
 
-.ad-out-btn{
+.ad-out-btn {
   margin-left: 0.5rem;
 }
 /*? banner ends */
@@ -450,34 +456,56 @@ header {
 }
 
 .about-container h2 {
-  color: #444;
-  font-size: 26px;
+  background: linear-gradient(220.55deg, #ff0000 0%, #470000 100%);
+  font-size: 1.75rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #212121;
+  font-family: "Exo 2", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .italic-para {
+  font-family: "Montserrat", sans-serif;
   margin: 15px 0;
   font-style: italic;
-  font-size: 17px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .about-list {
   margin-top: 20px;
 }
 
+.about-list li strong {
+  font-family: "Poppins", sans-serif;
+}
+
 .about-list li {
-  margin: 15px 0;
-  font-size: 17px;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
 }
 
 .about-list i {
   margin-right: 10px;
   color: #5fb278;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .about-para {
   margin-top: 35px;
   font-size: 17px;
+}
+
+#about h3 {
+  background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+  font-size: 1.5rem;
+  color: transparent;
+  /* -webkit-text-stroke: 1px #212121; */
+  font-family: "Poppins", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 /* about ends */
 
@@ -5786,10 +5814,10 @@ input[type="number"] {
   width: 20%;
 }
 
-.check-price-txt input{
+.check-price-txt input {
   padding: 0.5rem;
   width: 30%;
-  font-family: "Exo 2",sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
 }
 
@@ -5849,10 +5877,10 @@ input[type="number"] {
   border-radius: 0;
 }
 
-.payment-box p{
+.payment-box p {
   margin-top: 1rem;
 }
 
-.payment-box p strong{
-  font-family: "Exo 2",sans-serif;
+.payment-box p strong {
+  font-family: "Exo 2", sans-serif;
 }
