@@ -779,6 +779,11 @@
   /* .list-item .view-courses:nth-child(2){
     margin-bottom: 1rem;
   } */
+
+  .courses-info-boxes-content .view-details{
+    position: relative;
+    bottom: 25px;
+  }
 }
 @media (width<=992px) {
   .payment-box-con {

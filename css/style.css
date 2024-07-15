@@ -3409,6 +3409,26 @@ form.sign-in-form {
   line-height: 1.6;
 }
 
+.courses-info-boxes-content .view-details {
+  margin: 1rem 0;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(220.55deg, #ff0000 0%, #470000 100%);
+  padding: 0.5rem 1.5rem;
+  border: none;
+  color: #091b24;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.6s;
+  color: #fff;
+}
+
+.courses-info-boxes-content .view-details:hover {
+  background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+  color: #fff;
+}
+
 .view-details {
   margin: 1rem 0;
   font-family: "Exo 2", sans-serif;
