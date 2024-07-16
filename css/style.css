@@ -5907,3 +5907,17 @@ input[type="number"] {
 .payment-box p strong {
   font-family: "Exo 2", sans-serif;
 }
+
+/*? portfolio  */
+
+.portfolio-con{
+  width: 1140px;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+
+.portfolio-con img{
+width: 70%;
+}
