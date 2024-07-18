@@ -247,7 +247,7 @@ class MyHeader extends HTMLElement {
                       <li><a href="./career.html">Careers</a></li>
                       <li><a href="./team.html">Trainers</a></li>
                       <li><a href="./placements.html">Placements</a></li>
-                      <li><a href="./portfolio.html">Portfolio</a></li>
+                      <li><a href="./portfolioo.html">Portfolio</a></li>
                       <li><a href="./gallery.html">Gallery</a></li>
                       <li><a href="./meethr.html">Meet HR</a></li>
                       <li><a href="./guest-speaker.html">Guest Speakers</a></li>

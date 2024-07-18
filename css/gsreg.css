@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.form {
+.hr-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -30,6 +30,7 @@
   margin-right: auto;
   font-family: "Exo 2", sans-serif;
 }
+
 @keyframes color {
   0% {
     background-position: 0 50%;
@@ -43,7 +44,8 @@
     background-position: 0 50%;
   }
 }
-.title {
+
+.hr-form .title {
   font-size: 1.35rem;
   color: darkblue;
   font-weight: 700;
@@ -55,8 +57,8 @@
   margin: 1rem 0;
 }
 
-.title::before,
-.title::after {
+.hr-form .title::before,
+.hr-form .title::after {
   position: absolute;
   content: "";
   height: 16px;
@@ -66,48 +68,48 @@
   background-color: darkblue;
 }
 
-.title::before {
+.hr-form .title::before {
   width: 18px;
   height: 18px;
   background-color: darkblue;
 }
 
-.title::after {
+.hr-form .title::after {
   width: 18px;
   height: 18px;
   animation: pulse 1s linear infinite;
 }
 
-.message,
-.signin {
+.hr-form .message,
+.hr-form .signin {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
 }
 
-.signin {
+.hr-form .signin {
   text-align: center;
 }
 
-.signin a {
+.hr-form .signin a {
   color: royalblue;
 }
 
-.signin a:hover {
+.hr-form .signin a:hover {
   text-decoration: underline royalblue;
 }
 
-.flex {
+.hr-form .flex {
   display: flex;
   width: 100%;
   gap: 6px;
 }
 
-.form label {
+.hr-form .form label {
   position: relative;
   /* margin-left: 1rem; */
 }
 
-.form label .input {
+.hr-form label .input {
   width: 100%;
   padding: 1rem 0;
   outline: 0;
@@ -116,7 +118,7 @@
   margin: 0.5rem 0;
 }
 
-.form label .input + span {
+.hr-form label .input + span {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -126,30 +128,30 @@
   transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.hr-form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
 }
 
-.form label .input:focus + span,
-.form label .input:valid + span {
+.hr-form label .input:focus + span,
+.hr-form label .input:valid + span {
   top: 40px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input1:focus + span,
-.form label .input1:valid + span {
+.hr-form label .input1:focus + span,
+.hr-form label .input1:valid + span {
   top: 58px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form label .input:valid + span {
+.hr-form label .input:valid + span {
   color: green;
 }
 
-.submit {
+.hr-form .submit {
   border: none;
   outline: none;
   font-family: "Exo 2", sans-serif;
@@ -162,7 +164,7 @@
   letter-spacing: 2px;
 }
 
-.submit:hover {
+.hr-form .submit:hover {
   background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
   cursor: pointer;
 }
@@ -177,4 +179,14 @@
     transform: scale(1.8);
     opacity: 0;
   }
+}
+
+.hr-form input::placeholder {
+  font-family: "Exo 2", sans-serif;
+  padding-left: 0.5rem;
+}
+
+.hr-form textarea::placeholder {
+  font-family: "Exo 2", sans-serif;
+  padding-left: 0.5rem;
 }
