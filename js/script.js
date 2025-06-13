@@ -110,7 +110,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//? course pdf download 
+//? course pdf download
 
 const dropdown = document.querySelector(".dropdown");
 const select = dropdown.querySelector(".select");

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Optional Theme -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./css/slick.css" />
+  </head>
+  <body>
+
+
+    <section class="c-slider">
+      <div class="c-slider-init">
+        <div
+          class="c-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1504461407194-07c608d0989b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=100');
+          "
+        >
+          <div class="c-slide-content">
+            <div class="c-wrap c-wrap--line">
+              <h2 class="c-slide__title">
+                Underwater
+                <span class="c-slide__title--large">Monsters</span>
+              </h2>
+            </div>
+            <div class="c-wrap c-wrap--small">
+              <div class="c-slide__info">
+                <h3 class="c-slide__subtitle">Saltwater Crocodile</h3>
+                <p class="c-slide__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="c-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1544745494-3d8dd3fa1564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=100');
+          "
+        >
+          <div class="c-slide-content">
+            <div class="c-wrap c-wrap--line">
+              <h2 class="c-slide__title">
+                The
+                <span class="c-slide__title--medium">Gates of Hell</span>
+              </h2>
+            </div>
+            <div class="c-wrap c-wrap--small">
+              <div class="c-slide__info">
+                <h3 class="c-slide__subtitle">Special inside volcanoes</h3>
+                <p class="c-slide__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="c-slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1528214096798-37891d32174c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=100');
+          "
+        >
+          <div class="c-slide-content">
+            <div class="c-wrap c-wrap--line">
+              <h2 class="c-slide__title">
+                Exploring
+                <span class="c-slide__title--large">Deep Caves</span>
+              </h2>
+            </div>
+            <div class="c-wrap c-wrap--small">
+              <div class="c-slide__info">
+                <h3 class="c-slide__subtitle">Real Time Capsules</h3>
+                <p class="c-slide__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./js/slick.js"></script>
+  </body>
+</html>
+
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #fff !important;
+}
+
+.c-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+.c-header__title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 0 2rem;
+}
+
+.c-navigation {
+  flex-basis: 70%;
+}
+.c-navigation__list {
+  padding: 0;
+}
+.c-navigation__list-item {
+  display: inline-block;
+  margin: 0 2rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  opacity: 0.7;
+  font-weight: 500;
+
+  &:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    right: -2rem;
+  }
+}
+.c-navigation__list-item:last-of-type {
+  &:after {
+    background: transparent;
+  }
+}
+.c-navigation__list-item--active {
+  opacity: 1;
+
+  > a {
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: orange;
+      position: absolute;
+      bottom: -0.4rem;
+      left: 0;
+    }
+  }
+}
+
+.c-cta {
+  display: flex;
+  align-items: center;
+
+  > a {
+    font-size: 0.9em;
+    opacity: 0.7;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 2rem;
+  }
+}
+.c-cta__button {
+  border: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+.c-cta__button__search {
+  width: 15px;
+  height: 15px;
+  margin-right: 3rem;
+
+  svg {
+    width: inherit;
+    height: inherit;
+    fill: white;
+  }
+}
+
+.c-cta__button__menu {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+  }
+  &:after {
+    bottom: -5px;
+  }
+  &:before {
+    top: -5px;
+  }
+}
+
+.c-socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.8rem 1.8rem 0.8rem 1.8rem;
+  z-index: 2;
+}
+/* .c-socials__list {
+} */
+
+.c-socials__list-item {
+  margin-bottom: 1rem;
+  a svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/* .c-slider {
+}
+
+.c-slider-init {
+} */
+
+.c-slide {
+  display: inline-flex !important;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  will-change: background-size;
+  position: relative;
+  transition: 1s ease;
+  transition-delay: 0.4s;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.61) 76%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.61) 76%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.61) 76%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="#00000000",
+        endColorstr="#9c000000",
+        GradientType=0
+      );
+  }
+}
+
+.c-slide-content {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
+  max-width: 1200px;
+}
+
+.c-slide__title {
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s ease;
+  will-change: opacity, transform;
+}
+.c-slide__title--large,
+.c-slide__title--medium {
+  display: block;
+  font-size: 2.5em;
+  line-height: 110px;
+  transform: translateY(150px);
+  will-change: transform;
+  transition-delay: 0.4s;
+  position: relative;
+  transition: 1s ease;
+}
+.c-slide__title--medium {
+  font-size: 1.6em;
+  line-height: 100px;
+}
+.c-slide__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.c-slide__body {
+  margin-top: 0.7rem;
+  opacity: 0;
+  line-height: 27px;
+}
+.c-slide__info {
+  transform: translateY(-150px);
+  transition: 0.8s ease;
+}
+.c-wrap {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+.c-wrap--small {
+  max-width: 30%;
+}
+.c-wrap--line {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    transition: 0.9s ease;
+    transition-delay: 0.4s;
+  }
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.animateIn,
+.initialAnimation {
+  .c-slide__title--large,
+  .c-slide__title--medium,
+  .c-slide__info,
+  .c-slide__title,
+  .c-slide__body {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .c-wrap--line {
+    &:after {
+      left: 0;
+      transform: translateX(0);
+      width: 100%;
+    }
+  }
+}
+.slick-list {
+  transition: 0.5s ease;
+}
+.u-scale-out {
+  transform: scale(0.6) !important;
+  transition: 0.6s ease;
+}
+.u-scale-in {
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 1300px) {
+  .c-slide__title {
+    font-size: 3em;
+  }
+  .c-slide__title--large {
+    font-size: 2em;
+  }
+
+  .c-wrap--small {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .c-navigation {
+    display: none;
+  }
+  .c-header {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .c-slide__title--medium {
+    font-size: 1.3em;
+  }
+  .c-slide__title {
+    font-size: 2.5em;
+  }
+  .c-slide__title--large {
+    font-size: 1.5em;
+  }
+
+  .c-wrap--small {
+    max-width: 80%;
+  }
+}
+
+.c-slide {
+  transition: transform 0.6s ease;
+  transform-origin: center center;
+}
+
+/* Zoom in the background image */
+.c-slide.zoom-in {
+  transform: scale(1.1);
+}
+
+/* Zoom out the background image */
+.c-slide.zoom-out {
+  transform: scale(1);
+  transition: transform 1.2s ease; /* slower to zoom out */
+}
+jQuery(document).ready(function () {
+  jQuery(".c-slider-init").slick({
+    dots: false,
+    nav: false,
+    arrows: false,
+    infinite: true,
+    speed: 1200,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    draggable: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+  });
+
+  jQuery(".slick-current").addClass("initialAnimation");
+
+  let transitionSetup = {
+    target: ".slick-list",
+    enterClass: "u-scale-out",
+    doTransition: function () {
+      var slideContainer = document.querySelector(this.target);
+      slideContainer.classList.add(this.enterClass);
+      jQuery(".slick-current").removeClass("animateIn");
+    },
+    exitTransition: function () {
+      var slideContainer = document.querySelector(this.target);
+      setTimeout(() => {
+        slideContainer.classList.remove(this.enterClass);
+        jQuery(".slick-current").addClass("animateIn");
+      }, 2000);
+    },
+  };
+
+  var i = 0;
+  // On before slide change
+  jQuery(".c-slider-init").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      if (i == 0) {
+        event.preventDefault();
+        transitionSetup.doTransition();
+        i++;
+      } else {
+        i = 0;
+        transitionSetup.exitTransition();
+      }
+
+      jQuery(".c-slider-init").slick("slickNext");
+      jQuery(".slick-current").removeClass("initialAnimation");
+    }
+  );
+});
